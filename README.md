@@ -8,5 +8,5 @@ npx react-native init projectName
 
 # Run project on IOS device
 
-cd ios
-npx react-native run-ios
+~ cd ios
+~ npx react-native run-ios
