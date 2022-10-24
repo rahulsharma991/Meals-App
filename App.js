@@ -1,10 +1,19 @@
+import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
 import {StyleSheet} from 'react-native';
+import CategoriesScreen from './screens/CategoriesScreen';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-import CategorieScreen from './screens/CategoriesScreen';
+const Stack = createNativeStackNavigator();
 
 function App() {
-  return <CategorieScreen />;
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="MealsCategories" component={CategoriesScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
 }
 
 const styles = StyleSheet.create({});
