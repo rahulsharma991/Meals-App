@@ -9,7 +9,7 @@ function CategoryGridTile({title, color, pressedAction}) {
           styles.button,
           pressed ? styles.buttonPressed : null,
         ]}
-        android_ripple={{color: '#ccc'}}
+        android_ripple={{color: Color.pressableGrayColor}}
         onPress={pressedAction}>
         <View style={[styles.innerContainer, {backgroundColor: color}]}>
           <Text style={styles.title}>{title}</Text>
